@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* henter et andet style sheet ind i mit eget */
+@import "simplegrid.css";
+
+body {
+	background: white;
+}
+.content {
+	background: #ddd;
+}
+[class*='col-'] {
+	padding-right: 10px;
+	margin-bottom: -10px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 16px;
+}
+h1 {
+	text-align: center;
+}
