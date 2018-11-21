@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+ body {
+	background: #749CD3;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	background: white;
+}
+
+.ramme_a, .ramme_b, .ramme_c, .ramme_d, .ramme_e, .ramme_f {
+	text-align: center;
+}
+
+h1, p {
+	margin-left: 20px;
+}
+
+
+/*Navigation*/
+
+.navigation {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px 0;
+	background: white;
+	
+}
+
+nav ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	}
+	
+nav li{
+	
+	position: relative;
+	display: inline-block;
+		
+	}
+
+nav li a {
+	display: block;
+	text-decoration:none;
+}
+
+/*Section a*/
+
+.ramme_a, .ramme_b, .ramme_c, .ramme_d, .ramme_e, .ramme_f {
+	padding: 1em 0;
+}
+
+.billede_tekst_a, .billede_tekst_b, .billede_tekst_c {
+	padding-bottom: 2em;
+}
+
+
+
+/*Grid*/
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+	grid-template-columns: 20% 30% 30% 20%;
+  }
+	.navigation {
+		grid-column: 1/5;
+	}
+	
+	nav li {
+		padding: 0 2em;
+	}
+	
+	.billede_tekst_a, .billede_tekst_b, .billede_tekst_c {
+		grid-column: 2/4;
+		padding: 3em 2em 0em; 
+		margin: 0;
+		columns: 1;
+		
+	}
+	
+	.billede_tekst_d, .billede_tekst_e, .billede_tekst_f {
+		grid-column: 2/4;
+		padding: 3em 2em 0em; 
+		margin: 0;
+		columns: 1;
+	}
+	
+	.ramme_a, .ramme_b, .ramme_c, .ramme_d, .ramme_e, .ramme_f {
+		min-height: 200px;
+	}
+	
+	.logo {
+	    grid-column: 1/5;
+	}
+	
+	h1 {
+		grid-column: 1/5;
+	}
+	
+}
+	
+	
+
+		
+	

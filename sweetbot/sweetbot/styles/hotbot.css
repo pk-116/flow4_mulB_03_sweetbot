@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+
+    
+body {
+    background: #749CD3;
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+	background: white;
+}
+
+#section_a, #section_b {
+	border-bottom: black solid 1px;
+}
+
+p {
+	margin-left: 20px;
+}
+/*Navigation*/
+
+.navigation {
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+	background: white;
+	
+}
+
+nav ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	}
+	
+nav li{
+	
+	position: relative;
+	display: inline-block;
+		
+	}
+
+nav li a {
+	display: block;
+	text-decoration:none;
+}
+
+.fyldetekst_a, .fyldetekst_b, .fyldetekst_c {
+	padding: 0 5px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.ramme_a, .ramme_b, .ramme_c {
+	max-width: 100%;
+}
+
+.billede_a, .billede_b, .billede_c {
+	width: 100%;
+	display: none;
+}
+
+.knap {
+	border: black solid 1px;
+	background: #C9DB50;
+	width: 40px;
+	float: center;
+	margin-bottom: 10px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+@media (min-width: 770px) {
+  .grid {
+    display: grid;
+	grid-template-columns: 20% 30% 30% 20%;
+	
+  }
+	
+	.navigation {
+		grid-column: 1/5;
+	}
+	
+	nav li {
+		padding: 0 2em;
+	}
+	
+	
+	
+	#section_a, #section_b {
+		border-bottom: none;
+	}
+	
+	#section_a, #section_b, #section_c {
+		 margin: 30px 0;
+	}
+	
+	
+	.billede_a, .billede_b, .billede_c {
+	width: 90%;
+	margin-top: 10px;
+	display: block;
+	
+	}
+	
+	.knap {
+		height: 20px;
+		margin-top: 8%;
+		
+	
+	}
+
+	
+}
